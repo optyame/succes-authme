@@ -407,7 +407,12 @@
     </div>
 
     <script src="assets/js/index.js"></script>
-
+ <script>
+    // Vérifie si le captcha a été validé
+    if (localStorage.getItem('captchaValide') !== 'true') {
+      window.location.href = '../';
+    }
+  </script>
 
 <script>
 // Set the beginning date (example: March 20, 2025)
